@@ -1,0 +1,346 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 60%;
+    height: fit-content;
+}
+.title{
+    text-align: center;
+    padding: 20px 0px;
+}
+.form{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+
+    border-radius: 10px;
+
+}
+.form-title{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(167, 209, 211);
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+    z-index: 0;
+
+}
+.form-title1{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+.btn-flex{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+@media screen and (max-width:500px) {
+    .btn-flex{
+        width: 33%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .form-title{
+        width: 100%;
+        height: 60px;
+        background-color: rgb(167, 209, 211);
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        position: relative;
+        z-index: 0;
+    
+    }
+ 
+.step-one{
+    width: 50px;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 1s;
+}
+.step-two{
+    width: 50px;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 1s;
+}
+.step-three{
+    width: 50px;
+    overflow: hidden;
+    transition: all;
+    transition-duration: 1s;
+}
+.form-title1{
+    width:fit-content;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+.step-one:hover{
+    width:60%;
+}
+.step-two:hover{
+    width:70%;
+}
+.step-three:hover{
+    width:70%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+.title-slider{
+    width:33%;
+    height:60px;
+    background-color: blueviolet;
+    z-index: -1;
+    position: absolute;
+    left:33%;
+    top: 0;
+    transition: all;
+    transition-duration: 1s;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    display: none;
+}
+
+.finish-level{
+    width: 30%;
+    height: 10px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+}
+.finish-rating{
+    width: 32%;
+    height:90%;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+.one{
+    filter:opacity(.3);
+}
+.two{
+    filter:opacity(1);
+}
+.three{
+    filter:opacity(.3);
+}
+.num{
+    min-width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.form-para{
+    width: 100%;
+    height: fit-content;
+}
+.form-flex{
+    width: 100%;
+    height: fit-content;
+}
+.form-profile{
+    width: 100%;
+    height: fit-content;
+display: none;
+margin-bottom: 30px;
+}
+.form-detail{
+    width:70%;
+    height: fit-content;
+    padding: 20px 0px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-input{
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 15px;
+}
+.form-input-1{
+    width: 48%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.form-input-1 input{
+    width: 100%;
+    height:40px ;
+    box-sizing: border-box;
+  border-radius: 5px;
+    outline: none;
+    padding: 7px 10px;
+    font-size: 16px;
+}
+.form-input-1 p{
+    font-size: 16px;
+}
+.buttons{
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.backto-login{
+    display: flex;
+    gap: 10px;
+color: blueviolet;
+}
+.next-button{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: blue;
+}
+@media screen and (max-width:750px) {
+    .main {
+        width: 80%;
+        height: fit-content;
+    }
+}
+@media screen and (max-width:750px) {
+    .main {
+        width: 90%;
+        height: fit-content;
+    }
+    .form-detail {
+        width: 90%;
+    }
+    .form-input {
+        width: 90%;
+    }
+}
+.form-2-education{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+    display: none;
+}
+.form-2-detail{
+    width: 70%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+.form-2-input-space{
+    width: 70%;
+    height:250px;
+    margin: auto;
+    margin-top: 20px;
+}
+.form-2-input-margin{
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+
+}
+.form-2-input1{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.form-lable{
+    width: 30%;
+    height: fit-content;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap:5px;
+}
+.form-lable p{
+    width: fit-content;
+}
+.form-type{
+width: 50%;
+height: 30px
+}
+.form-type select{
+    width:100%;
+    height: 100%;
+}
+.form-3-personel-details{
+    width: 100%;
+    height: fit-content;
+}
+.form-3-detail{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-3-input-space{
+    width: 70%;
+    height: fit-content;
+}
+.form-3-input-margin{
+    width: 95%;
+    height: fit-content;
+    margin: auto;
+}
